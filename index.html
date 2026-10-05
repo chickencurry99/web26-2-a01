@@ -5,177 +5,326 @@
     <title>Chicken Curry</title>
 
     <style>
+
+        /*기본설정*/
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            background-color: beige;
+            background-color: #F6F3EA;
+            color: #26352D;
             text-align: center;
             font-family: Arial, sans-serif;
+            margin: 0;
         }
 
-        h1 {
-            color: ivory;
-            background-color: darkolivegreen;
-            padding: 20px;
-            border: 5px solid olive;
-            border-radius: 15px;
-            margin: 30px;
+
+        /* 배너 */
+
+        #banner {
+            background-color: #263A2E;
+            padding: 28px 20px;
+            margin: 0;
         }
 
-        h2 {
-            color: #146B3A;
-            font-size: 20px;
-            border: 3px solid #39A852;
-            border-radius: 15px;
-            padding: 12px;
-            margin: 15px auto;
-            width: 200px;
-            background-color: #ffffff;
+        #banner h1 {
+            color: #FFFDF5;
+            font-size: 30px;
+            margin: 0;
+            padding: 18px;
+            border: 2px solid #B7A35A;
+            border-radius: 14px;
         }
 
-        h3{
-            color:  #39A852;
-            font-size: 50px;
 
-        }
-        span{
-            color :rgb(221, 204, 109);
+        /* 헤더와 이미지*/
+
+        #header {
+            padding: 70px 30px 80px;
         }
 
-        
-
-        p {
-            color: rgb(221, 204, 109);
-            font-size: 25px;
+        #header h3 {
+            color: #315C45;
+            font-size: 42px;
+            margin: 0 0 40px;
+            font-weight: 700;
         }
 
-        hr{
-            color:rgb(232, 248, 235);
+        #header span {
+            color: #B28B36;
         }
 
-        table {
+        #header img {
+            width: 300px;
+            height: 230px;
+            object-fit: cover;
+            margin: 8px;
+            border-radius: 18px;
+            border: 3px solid #E3DDCC;
+        }
+
+
+        /*구분선 */
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #D8D4C7;
+            width: 90%;
             margin: 0 auto;
-            border-collapse: collapse;
-            background-color: white;
-        }
-
-        th {
-            background-color: #39A852;
-            color: white;
-            padding: 10px;
-        }
-
-        td {
-            color: #566573;
-            padding: 10px;
-            border: 1px solid #AED6F1;
         }
 
 
+        /* weekly 부분 css*/
+
+        #weekly {
+            padding: 60px 30px 70px;
+        }
+
+        #weekly p {
+            color: #315C45;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        #weekly table {
+            margin: 0 auto;
+            border-collapse: separate;
+            border-spacing: 0;
+            background-color: #FFFFFF;
+            border: 1px solid #DDD8C9;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(38, 58, 46, 0.08);
+        }
+
+        #weekly th {
+            background-color: #3F674F;
+            color: #FFFFFF;
+            padding: 14px 12px;
+            font-size: 14px;
+            border-right: 1px solid #557762;
+        }
+
+        #weekly td {
+            color: #56635B;
+            padding: 14px 12px;
+            border-right: 1px solid #E6E2D8;
+            border-top: 1px solid #E6E2D8;
+            font-size: 15px;
+        }
+
+        #weekly td:last-child,
+        #weekly th:last-child {
+            border-right: none;
+        }
+
+        #weekly td:first-child,
+        #weekly td:nth-child(2),
+        #weekly td:nth-child(3) {
+            color: #B28B36;
+        }
 
 
-        ul {
-            color: #555555;
+        /* prctice 부분 css */
+
+        #practice {
+            padding: 60px 30px 100px;
+        }
+
+        #practice > p:first-child {
+            color: #B28B36;
+            font-size: 15px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        #practice > p:nth-child(2) {
+            color: #263A2E;
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+
+        /* chapter 버튼 css */
+
+        #practice h2 {
+            color: #315C45;
             font-size: 17px;
-            line-height: 2;
+            font-weight: 600;
+
+            background-color: #FFFFFF;
+
+            width: 220px;
+            padding: 15px 20px;
+            margin: 12px auto;
+
+            border: 1px solid #D9D5C8;
+            border-radius: 12px;
+
+            box-shadow: 0 4px 12px rgba(38, 58, 46, 0.05);
+
+            transition: 0.2s;
         }
+
+        #practice a {
+            text-decoration: none;
+        }
+
+        #practice a h2:hover {
+            background-color: #3F674F;
+            color: #FFFFFF;
+            border-color: #3F674F;
+
+            transform: translateY(-3px);
+
+            box-shadow: 0 8px 18px rgba(38, 58, 46, 0.15);
+        }
+
+
+        /* =========================
+           아직 안 만든 Chapter
+        ========================= */
+
+        #practice h2:not(:has(+ a)) {
+            color: #A7AAA5;
+        }
+
     </style>
 
 </head>
 
+
 <body>
 
-    <h1>🍛 Chickencurry99의 실습 🍛</h1>
-    <br>
-    <br>
-    <h3><span>Chicken Curry</span>'s practice site</h3>
-    <img src="chickencurry1.png" width="300" height="230">
-    <img src="chickencurry1.png" width="300" height="230">
-    <img src="chickencurry1.png" width="300" height="230">
-    <br>
-    <br>
-    <br>
+
+    <!-- 배너 -->
+
+    <div id="banner">
+
+        <h1>🍛 Chickencurry99의 실습 🍛</h1>
+
+    </div>
+
+
+    <!-- 헤더 -->
+
+    <div id="header">
+
+        <h3>
+            <span>Chicken Curry</span>'s practice site
+        </h3>
+
+        <img src="chickencurry1.png">
+        <img src="chickencurry1.png">
+        <img src="chickencurry1.png">
+
+    </div>
+
 
     <hr>
-    <br>
-    <br>
-    <p><b>[Weekly Practice]</b></p>
-    <table border="1" align="center">
-        <tr>
-            <th>Week 1</th>
-            <th>Week 2</th>
-            <th>Week 3</th>
-            <th>Week 4</th>
-            <th>Week 5</th>
-            <th>Week 6</th>
-            <th>Week 7</th>
-            <th>Week 8</th>
-            <th>Week 9</th>
-            <th>Week 10</th>
-            <th>Week 11</th>
-            <th>Week 12</th>
-            <th>Week 13</th>
-            <th>Week 14</th>
-            <th>Week 15</th>
-        </tr>
 
-        <tr>
-            <td>✅</td>
-            <td>✅</td>
-            <td>✅</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-        </tr>
-    </table>
-    <br>
-    <br>
-    <br>
+
+    <!-- weekly -->
+
+    <div id="weekly">
+
+        <p>
+            <b>[Weekly Practice]</b>
+        </p>
+
+        <table border="1">
+
+            <tr>
+                <th>Week 1</th>
+                <th>Week 2</th>
+                <th>Week 3</th>
+                <th>Week 4</th>
+                <th>Week 5</th>
+                <th>Week 6</th>
+                <th>Week 7</th>
+                <th>Week 8</th>
+                <th>Week 9</th>
+                <th>Week 10</th>
+                <th>Week 11</th>
+                <th>Week 12</th>
+                <th>Week 13</th>
+                <th>Week 14</th>
+                <th>Week 15</th>
+            </tr>
+
+            <tr>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+        </table>
+
+    </div>
+
 
     <hr>
-    <br>
-    <br>
-    <br>
-
-    <p><b>[실습 코드]</b></p>
-    <p><b>Chapter Click</b></p>
-
-    <br>
 
 
-    <h2>Chapter1 -> OT</h2>
-    <a href="Chapter2/WelcomeChapter2.html">
-        <h2>Chapter2</h2>
-    </a>
-    <a href="Chapter3/WelcomeChapter3.html">
-        <h2>Chapter3</h2>
-    </a>
-    <h2>-</h2>
-    <h2>-</h2>
-    <h2>-</h2>
-    <h2>-</h2>
-    <h2>-</h2>
-    <h2>-</h2>
-    <h2>-</h2>
-    <h2>-</h2>
-    <h2>-</h2>
-    <h2>-</h2>
-    <h2>-</h2>
-    <h2>-</h2>
+    <!-- practice(실습) -->
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    
+    <div id="practice">
+
+        <p>
+            <b>[실습 코드]</b>
+        </p>
+
+        <p>
+            <b>Chapter Click</b>
+        </p>
+
+
+        <h2>Chapter1 → OT</h2>
+
+        <a href="Chapter2/WelcomeChapter2.html">
+            <h2>Chapter2</h2>
+        </a>
+
+        <a href="Chapter3/WelcomeChapter3.html">
+            <h2>Chapter3</h2>
+        </a>
+
+        <a href="Chapter3/WelcomeChapter3.html">
+            <h2>Chapter4</h2>
+        </a>
+        
+        <a href="Chapter3/WelcomeChapter3.html">
+            <h2>Chapter5</h2>
+        </a>
+        <h2>-</h2>
+        <h2>-</h2>
+        <h2>-</h2>
+        <h2>-</h2>
+        <h2>-</h2>
+        <h2>-</h2>
+        <h2>-</h2>
+        <h2>-</h2>
+        <h2>-</h2>
+        <h2>-</h2>
+
+    </div>
+
 
 </body>
 </html>
