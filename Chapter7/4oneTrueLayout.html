@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">    
+    <title>4oneTrueLayout</title>
+        <style>
+        body{
+            width: 500px;
+            margin: 10px auto;
+        }
+        #middle{overflow: hidden;}
+        #left{
+            float: left;
+            width: 150px;
+            background: red;
+        }
+        #right{
+            float: right;
+            width: 350px;
+            background: blue;
+        }
+        #top{
+            background: green;
+        }
+        #bottom{
+            background: purple;
+        }
+
+        /*요약 파트*/
+
+        details {
+            width: 502px;
+            margin-left: -1px;
+            padding: 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        /*빨간색 150px, 파란색 350px 사이즈 계산 위해 박스 여백 없애고 테두리, margin-left: -1px;로 박스 좀 왼쪽으로 옮겨 미세조정*/
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            padding: 5px;
+        }
+
+        details[open] {
+            background-color: #f5f5f5;
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+    <h2>ch7_1정렬...수평, 중앙, One True정렬 레이아웃</h2>
+    <h3>ch7_1_3 One True 정렬 레이아웃</h3>
+    
+    <!-- 행구성, 열구성은 요약해서 펼치면 보여줌-->
+    <details>
+    <summary>1.행 구성하기</summary>
+        <p>
+            <div id="top">L</div>
+            <div id="middle">o</div>
+            <div id="bottom">r</div>
+        </p> 
+    </details>
+
+    <details>
+    <summary>2.열 구성하기</summary>
+        <p>
+        <div id="top">L</div>
+        <div id="middle">
+            <div id="left">o</div>
+            <div id="right">r</div>
+        </div>
+        <div id="bottom">e</div>
+        </p> 
+    </details>
+
+    <h4>3. 레이아웃 구성하기</h4>
+    <p>1-부모 태그에 고정된 너비를 지정합니다.<br>
+        2-수평 정렬하는 부모 태그의 overflow속성에 hidden을 적용합니다.<br>
+        3-자손 태그에 적당한 너비를 입력하고 float속성을 적용합니다. <br> </p>
+
+    <hr>
+
+
+    <div id="top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fuga eligendi non laborum architecto tempore accusamus suscipit repudiandae, fugit pariatur sapiente praesentium vitae nemo sunt eos in commodi recusandae a?</div>
+    <div id="middle">
+        <div id="left">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div id="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident pariatur quis debitis placeat veritatis illo, dolore quod excepturi. Officiis debitis perspiciatis, ducimus earum neque cum accusamus dolore qui doloribus dicta.</div>
+    </div>
+    <div id="bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium debitis est perspiciatis non minima dolore suscipit, adipisci aperiam, consequatur numquam eaque molestiae repellendus odio vel asperiores atque, reprehenderit repudiandae neque!</div>
+</body>
+</html>

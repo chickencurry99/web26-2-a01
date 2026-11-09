@@ -193,6 +193,68 @@
             color: #A7AAA5;
         }
 
+
+
+
+        /*-------------------------------------*/
+        /*과제 파트*/
+        
+        /* assignment */
+
+        #assignment {
+            padding: 60px 30px 100px;
+            background-color: #F0EDE3;
+        }
+
+        #assignment > p {
+            color: #B28B36;
+            font-size: 15px;
+        }
+
+        #assignment > h2 {
+            color: #263A2E;
+            font-size: 28px;
+            margin-bottom: 35px;
+        }
+
+        /* 카드 정렬 */
+        .assignment-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .assignment-card {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            margin: 0;
+            border: 1px solid #DDD8C9;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(38, 58, 46, 0.08);
+            
+        }
+
+
+
+        .assignment-card h3 {
+            color: #315C45;
+            font-family: "Trebuchet MS", sans-serif;
+        }
+
+        .assignment-card p {
+            color: #56635B;
+        }
+
+        .assignment-card span {
+            color: #B28B36;
+            font-size: 13px;
+        }
+
+
+
+
     </style>
 
 </head>
@@ -262,9 +324,9 @@
                 <td>✅</td>
                 <td>✅</td>
                 <td>✅</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td>✅</td>
+                <td>✅</td>
+                <td>✅</td>
                 <td>-</td>
                 <td>-</td>
                 <td>-</td>
@@ -312,9 +374,18 @@
         <a href="Chapter5/WelcomeChapter5.html">
             <h2>Chapter5</h2>
         </a>
-        <h2>-</h2>
-        <h2>-</h2>
-        <h2>-</h2>
+        
+        <a href="Chapter6/WelcomeChapter6.html">
+            <h2>Chapter6</h2>
+        </a>
+        
+        <a href="Chapter7/WelcomeChapter7.html">
+            <h2>Chapter7</h2>
+        </a>
+        
+        <a href="Chapter8/WelcomeChapter8.html">
+            <h2>Chapter8</h2>
+        </a>
         <h2>-</h2>
         <h2>-</h2>
         <h2>-</h2>
@@ -325,7 +396,35 @@
 
     </div>
 
+    <hr>
+
+    <!-- 과제 섹션 -->
+
+
+<div id="assignment">
+
+    <p><b>[MY ASSIGNMENTS]</b></p>
+    <h2>Assignment Archive</h2>
+
+    <div class="assignment-list">
+
+        <div class="assignment-card">
+            <a href ="./blog1.html"><h3>Assignment 01</h3></a>
+            <p>HTML Practice</p>
+            <span>✓ Completed</span>
+        </div>
+
+        <div class="assignment-card">
+            <a href ="./blog2.html"><h3>Assignment 02</h3></a>
+            <p>CSS Design</p>
+            <span>◷ In Progress</span>
+        </div>
+
+
+    </div>
+</div>
+
+
 
 </body>
 </html>
-

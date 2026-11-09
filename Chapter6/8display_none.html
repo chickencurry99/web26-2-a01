@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>2.가시속성</title>
+    <style>
+        body {
+            background-color: #E5DFD1;
+  
+            font-family: '맑은 고딕', 돋움, sans-serif;
+        }
+
+        *{color:#62645D;}
+
+        #box{
+            display:none;
+        }
+        #box2{
+            display:block;
+            background-color: #9BB7AE;
+        }
+        #box3{
+            display:inline;
+            background-color: #9BB7AE;
+        }
+        #box4{
+            display:inline-block;
+            background: linear-gradient(#9BB7AE,#9BB7AE) content-box,
+                #b4c9c3;
+            padding :10px;
+
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #D0C8B9;
+            margin: 70px 0;
+
+        }
+        h2{
+            color : #6E9BB4;
+        }
+        h3{
+            color : #344C70;
+        }
+        h4{
+            color : #6E9BB4;
+        }
+        p{
+            color : #344C70;
+        }
+    </style>
+    
+</head>
+<body>
+    <br>
+    <h2>02.가시속성(태그가 화면에 보이는 방식을 지정)</h2>
+    <h3>. none:화면에 보이지 않음</h3>
+    <h3>. block:블록 박스 형식으로 지정</h3>
+    <h3>. inline:인라인 형식으로 지정</h3>
+    <h3>. inline-block:인라인 블록 형식으로 지정</h3>
+    <hr>
+    <h4>[ 6-8 ]</h4>
+    <span>더미 객체</span>
+    <div id="box">대상 객체</div>
+    <span>더미 객체</span>
+    <br>
+    <br>
+    <h4>[ 6-9 ]</h4>
+    <span>더미 객체</span>
+    <div id="box2">대상 객체</div>
+    <span>더미 객체</span>
+    <br>
+    <br>
+    <h4>[ 6-10 ]</h4>
+    <span>더미 객체</span>
+    <div id="box3">대상 객체</div>
+    <span>더미 객체</span>
+    <br>
+    <br>
+    <h4>[ 6-11 ]</h4>
+    <span>더미 객체</span>
+    <div id="box4">대상 객체 대상 객체</div>
+    <span>더미 객체</span>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
